@@ -1,67 +1,72 @@
 # TwZipcode
-±N¤¤µØ¶l¬F(http://www.post.gov.tw/)ªº*¡u»OÆW¦a°Ï¶l»¼°Ï¸¹«e3½X¤@Äıªí 103/12(Excelª©)¡v*Âà¦¨¦UºØ®æ¦¡¡A¤è«K³nÅé¶}µo®É¥iª½±µ¤Ş¥Î¡C
+å°‡ä¸­è¯éƒµæ”¿ï¼ˆwww.post.gov.twï¼‰çš„**ã€Œè‡ºç£åœ°å€éƒµéå€è™Ÿå‰3ç¢¼ä¸€è¦½è¡¨ 103/12(Excelç‰ˆ)ã€**è½‰æˆå„ç¨®æ ¼å¼ï¼Œæ–¹ä¾¿è»Ÿé«”é–‹ç™¼æ™‚å¯ç›´æ¥å¼•ç”¨ã€‚
 
-### ¸ê®Æµ²ºc
-| °Ñ¼Æ    | »¡©ú           |
+### è³‡æ–™çµæ§‹
+| åƒæ•¸    | èªªæ˜           |
 |---------|----------------|
-| zipcode | 3½X¶l»¼°Ï¸¹    |
-| county  | ¿¤¡B¥«©Îª½ÁÒ¥« |
-| city    | ¶mÂí¥«°Ï       |
+| zipcode | 3ç¢¼éƒµéå€è™Ÿ    |
+| county  | ç¸£ã€å¸‚æˆ–ç›´è½„å¸‚ |
+| city    | é„‰é®å¸‚å€       |
 
-### ¸ê®Æ»¡©ú
+### è³‡æ–™èªªæ˜
 
-##### twzipcode-data.json
->json¥HUNICODE½s½X¡A©Î¬İ[¹wÄı](twzipcode-data.js.demo.html)
+#### twzipcode-data.json
+> ä»¥UNICODEç·¨ç¢¼ï¼Œçœ‹[é è¦½](http://yyc1217.github.io/twzipcode-data/twzipcode-data.js.demo.html)
 
-##### twzipcode-data.js
+#### twzipcode-data.js
+```html
+<!-- å¯ä»¥ç”¨<script>å¼•å…¥ï¼Œç”¨twzipcodeè®Šæ•¸å–å¾— -->
+<script src="twzipcode-data.js"></script>
+```
+
 ```javascript
 /**
-* ¸ê®Æ¦s¦bwindow.twzipcode
+* è³‡æ–™å­˜åœ¨window.twzipcode
 */
 var twzipcode = {
 
     /**
-    *  ¿¤¥«¦Cªí  
+    *  ç¸£å¸‚åˆ—è¡¨  
     */
     "counties" : [
-        "»O¥_¥«", 
+        "è‡ºåŒ—å¸‚", 
         ...
     ],
     
     /**
-    *  ²M³æ
+    *  æ¸…å–®
     */
     "list" : [
-            {'zipcode' : 100, 'county' : '»O¥_¥«', 'city' : '¤¤¥¿°Ï' },
+            {"zipcode" : 100, "county" : "è‡ºåŒ—å¸‚", "city" : "ä¸­æ­£å€" },
             ...
     ],
 
     /**
-    *  ¨Ì¿¤¡B¥«©Îª½ÁÒ¥«¤ÀÃş
+    *  ä¾ç¸£ã€å¸‚æˆ–ç›´è½„å¸‚åˆ†é¡
     */
     "groupByCounty" : {
-        "»O¥_¥«": [
-            {'zipcode' : 100, 'county' : '»O¥_¥«', 'city' : '¤¤¥¿°Ï' },
+        "è‡ºåŒ—å¸‚": [
+            {"zipcode" : 100, "county" : "è‡ºåŒ—å¸‚", "city" : "ä¸­æ­£å€" },
             ...
          ],
-         "°ò¶©¥«": [
-         	{'zipcode' : 200, 'county' : '°ò¶©¥«', 'city' : '¤¯·R°Ï' },
+         "åŸºéš†å¸‚": [
+         	{"zipcode" : 200, "county" : "åŸºéš†å¸‚", "city" : "ä»æ„›å€" },
             ...
          ],
          ...
     },
     
     /**
-    *  ¨Ì¶l»¼°Ï¸¹§@¬°key
+    *  ä¾éƒµéå€è™Ÿä½œç‚ºkey
     */
     "mapByZipcode" : {
-        "100" : {'zipcode' : 100, 'county' : '»O¥_¥«', 'city' : '¤¤¥¿°Ï' },
+        "100" : {"zipcode" : 100, "county" : "è‡ºåŒ—å¸‚", "city" : "ä¸­æ­£å€" },
         ...
     }
 };
         
 ```
-> json¥HUNICODE½s½XÀx¦s¡A¬İ[¹wÄı](twzipcode-data.js.demo.html)
+> ä»¥UNICODEç·¨ç¢¼å„²å­˜ï¼Œçœ‹[é è¦½](http://yyc1217.github.io/twzipcode-data/twzipcode-data.js.demo.html)
 
-##### twzipcode-data.csv
-> csv¥HUTF-8½s½XÀx¦s
+#### twzipcode-data.csv
+> csvä»¥UTF-8ç·¨ç¢¼å„²å­˜
