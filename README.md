@@ -1,6 +1,11 @@
 # TwZipcode
 將中華郵政（www.post.gov.tw）的**「臺灣地區郵遞區號前3碼一覽表 103/12(Excel版)」**轉成各種格式，方便軟體開發時可直接引用。
 
+### Bower
+```sh
+bower install twzipcode-data
+```
+
 ### 資料結構
 | 參數    | 說明           |
 |---------|----------------|
