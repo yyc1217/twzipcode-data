@@ -16,19 +16,8 @@ bower install twzipcode-data
 ### 資料說明
 
 #### twzipcode-data.json
-> 以UNICODE編碼，看[預覽](http://yyc1217.github.io/twzipcode-data/twzipcode-data.js.demo.html)
-
-#### twzipcode-data.js
-```html
-<!-- 可以用<script>引入，用twzipcode變數取得 -->
-<script src="twzipcode-data.js"></script>
-```
-
 ```javascript
-/**
-* 資料存在window.twzipcode
-*/
-var twzipcode = {
+{
 
     /**
     *  縣市列表  
@@ -70,6 +59,21 @@ var twzipcode = {
     }
 };
         
+```
+> 以UNICODE編碼，看[預覽](http://yyc1217.github.io/twzipcode-data/twzipcode-data.js.demo.html)
+
+#### twzipcode-data.js
+```html
+<!-- 可以用<script>引入，用twzipcode變數取得 -->
+<script src="twzipcode-data.js"></script>
+```
+
+```javascript
+/**
+* 資料存在window.twzipcode
+*/
+var twzipcode = {
+...
 ```
 > 以UNICODE編碼儲存，看[預覽](http://yyc1217.github.io/twzipcode-data/twzipcode-data.js.demo.html)
 
