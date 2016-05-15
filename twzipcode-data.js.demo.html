@@ -1,0 +1,19 @@
+<!doctype html>
+
+<html lang="zh-Hant-TW">
+    <head>
+        <meta charset="utf-8">
+        <title>Taiwan zipcode data preview</title>
+        <meta name="description" content="Taiwan zipcode selection generator">
+        <meta name="author" content="Yeh-Yung Chang">
+        <style>html, body { height: 100%; width: 100%;} textarea { height: 90%; width: 90%}</style>
+    </head>
+
+    <body>
+        <pre></pre>
+        <script src="twzipcode-data.js"></script>
+        <script type="text/javascript">
+            document.getElementsByTagName('pre')[0].innerHTML = JSON.stringify(twzipcode, null, 4);
+        </script>
+    </body>
+</html>
