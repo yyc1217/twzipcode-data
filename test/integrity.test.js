@@ -3,13 +3,13 @@ import 'should'
 const COUNTIES_COUNT = 22
 const ZIPCODES_COUNT = 368
 
-module.exports = ({
+export default ({
     locale,
     TEST_COUNTY,
     TEST_CITY,
     TEST_ZIPCODE
 }) => {
-  const twzipcode = require('../src/main')[locale]
+  const twzipcode = require('../src/main')(locale)
 
   const TEST_CITY_OBJECT = {
     'city': TEST_CITY

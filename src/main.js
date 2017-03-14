@@ -1,6 +1,6 @@
-import data from './data/js'
+import of from './data/js'
 
-let of = ({ counties, zipcodes, groupByCounty, keyByZipcode }) => {
+let data = ({ counties, zipcodes, groupByCounty, keyByZipcode }) => {
   return {
     counties,
     zipcodes,
@@ -11,13 +11,6 @@ let of = ({ counties, zipcodes, groupByCounty, keyByZipcode }) => {
   }
 }
 
-let main = {
-  get 'zh-tw' () {
-    return of(data('zh-tw'))
-  },
-  get 'en' () {
-    return of(data('en'))
-  }
+module.exports = (locale) => {
+  return data(of(locale))
 }
-
-module.exports = main
