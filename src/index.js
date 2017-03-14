@@ -5,15 +5,27 @@ import fs from 'fs'
  * Check locale directory exists.
  * @param {string} path
  */
-let isDirSync = (path) => {
-  try {
-    return fs.statSync(path).isDirectory()
-  } catch (e) {
-    if (e.code === 'ENOENT') {
-      return false
-    } else {
-      throw e
+
+
+/**
+ *
+ * @param {string} locale
+ */
+let checkDirExists = (locale) => {
+  let isDirSync = (path) => {
+    try {
+      return fs.statSync(path).isDirectory()
+    } catch (e) {
+      if (e.code === 'ENOENT') {
+        return false
+      } else {
+        throw e
+      }
     }
+  }
+
+  if (!isDirSync(`./src/${locale}`)) {
+    throw new Error(`Locale ${locale} is not support. Help localization? See https://github.com/yyc1217/twzipcode-data#i18n`)
   }
 }
 
@@ -22,9 +34,7 @@ let isDirSync = (path) => {
  * @param {string} locale
  */
 let of = (locale) => {
-  if (!isDirSync(`./src/${locale}`)) {
-    throw new Error(`Locale ${locale} is not support. Help localization? See https://github.com/yyc1217/twzipcode-data#i18n`)
-  }
+  checkDirExists(locale)
 
   const counties = require(`./${locale}/counties`)
   const zipcodes = require(`./${locale}/zipcodes`)
