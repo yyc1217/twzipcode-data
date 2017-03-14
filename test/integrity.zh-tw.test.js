@@ -1,5 +1,5 @@
 const should = require("should")
-const twzipcode = require("../src/main")
+const twzipcode = require("../src/main")['zh-tw']
 
 const COUNTIES_COUNT = 22
 const ZIPCODES_COUNT = 368
