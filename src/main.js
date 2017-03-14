@@ -1,20 +1,24 @@
-const tw = require('./data/js/zh-tw/twzipcode-data')
-//const en = require('./data/js/twzipcode-data.en')
+const tw = require('./data/js')('zh-tw')
+const en = require('./data/js')('en')
 
-let of = (data) => {
+let of = ({counties, zipcodes, groupByCounty, keyByZipcode}) => {
     return {
-        counties: data.counties,
-        zipcodes: data.zipcodes,
+        counties,
+        zipcodes,
         computed: {
-            groupByCounty: data.groupByCounty,
-            keyByZipcode: data.keyByZipcode
+            groupByCounty,
+            keyByZipcode
         }
     }
 }
 
 let main = {
-    'zh-tw' : of(tw),
-//    en: of(en)
+    get 'zh-tw'() {
+        return of(tw)
+    },
+    get 'en'() {
+        return of(en)
+    }
 }
 
 module.exports = main
