@@ -14,7 +14,7 @@ let isDirSync = (aPath) => {
 }
 
 export default (locale) => {
-  if (isDirSync(`./src/data/js/${locale}`)) {
+  if (!isDirSync(`./src/data/js/${locale}`)) {
     throw new Error(`Locale ${locale} is not support. Help localization? See https://github.com/yyc1217/twzipcode-data#i18n`)
   }
 

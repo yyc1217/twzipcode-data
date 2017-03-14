@@ -1,8 +1,8 @@
 {
   "name": "twzipcode-data",
   "version": "v1.2.0",
-  "description": "中華郵政郵遞區號各種格式",
-  "main": "index.js",
+  "description": "中華郵政郵遞區號各種格式開發用 / Variety format of Taiwan zipcode for developers.",
+  "main": "src/index.js",
   "scripts": {
     "test": "mocha --compilers js:babel-core/register",
     "dev": "babel src -d dist"
@@ -13,7 +13,10 @@
   },
   "keywords": [
     "Taiwan",
-    "zipcode"
+    "zipcode",
+    "中華郵政",
+    "臺灣",
+    "郵遞區號"
   ],
   "author": "Yeh-Yung Chang",
   "license": "MIT",

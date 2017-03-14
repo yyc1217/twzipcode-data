@@ -9,7 +9,7 @@ export default ({
     TEST_CITY,
     TEST_ZIPCODE
 }) => {
-  const twzipcode = require('../src/main')(locale)
+  const twzipcode = require('../src')(locale)
 
   const TEST_CITY_OBJECT = {
     'city': TEST_CITY
