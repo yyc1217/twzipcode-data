@@ -1,5 +1,50 @@
-import of from './data/js'
+import { groupBy, keyBy } from 'lodash'
+import fs from 'fs'
 
+/**
+ * Check locale directory exists.
+ * @param {string} path
+ */
+let isDirSync = (path) => {
+  try {
+    return fs.statSync(path).isDirectory()
+  } catch (e) {
+    if (e.code === 'ENOENT') {
+      return false
+    } else {
+      throw e
+    }
+  }
+}
+
+/**
+ * Read data.
+ * @param {string} locale
+ */
+let of = (locale) => {
+  if (!isDirSync(`./src/${locale}`)) {
+    throw new Error(`Locale ${locale} is not support. Help localization? See https://github.com/yyc1217/twzipcode-data#i18n`)
+  }
+
+  const counties = require(`./${locale}/counties`)
+  const zipcodes = require(`./${locale}/zipcodes`)
+
+  return {
+    counties,
+    zipcodes,
+    get groupByCounty () {
+      return groupBy(zipcodes, 'county')
+    },
+    get keyByZipcode () {
+      return keyBy(zipcodes, 'zipcode')
+    }
+  }
+}
+
+/**
+ * Construct response format.
+ * @param {Object} options
+ */
 let data = ({ counties, zipcodes, groupByCounty, keyByZipcode }) => {
   return {
     counties,
