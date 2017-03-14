@@ -25,4 +25,6 @@ npm install twzipcode-data --save-dev
 | city    | 鄉鎮市區       |
 
 ## i18n
-In `./src`, add `counties.js` and `zipcodes.js`, see [src/zh-tw](src/zh-tw).
+1. In `./src/{locale}`, add `counties.js` and `zipcodes.js`.
+2. In `./test`, add `integrity.test.{locale}.js`.
+> see [src/zh-tw](src/zh-tw).
