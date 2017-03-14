@@ -1,0 +1,34 @@
+{
+  "name": "twzipcode-data",
+  "version": "v1.2.0",
+  "description": "中華郵政郵遞區號各種格式",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --compilers js:babel-core/register",
+    "dev": "babel src -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yyc1217/twzipcode-data.git"
+  },
+  "keywords": [
+    "Taiwan",
+    "zipcode"
+  ],
+  "author": "Yeh-Yung Chang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yyc1217/twzipcode-data/issues"
+  },
+  "homepage": "https://github.com/yyc1217/twzipcode-data#readme",
+  "devDependencies": {
+    "babel-cli": "^6.24.0",
+    "babel-preset-es2015": "^6.24.0",
+    "csvtojson": "^1.1.4",
+    "mocha": "^3.2.0",
+    "should": "^11.2.1"
+  },
+  "dependencies": {
+    "lodash": "^4.17.4"
+  }
+}
