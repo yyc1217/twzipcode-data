@@ -27,4 +27,5 @@ npm install twzipcode-data --save-dev
 ## i18n
 1. In `./src/{locale}`, add `counties.js` and `zipcodes.js`.
 2. In `./test`, add `integrity.test.{locale}.js`.
-> see [src/zh-tw](src/zh-tw).
+3. In `.src/index.js`, append `{locale}` to `locales` parameters.
+see [src/zh-tw](src/zh-tw).

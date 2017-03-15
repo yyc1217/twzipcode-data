@@ -1,24 +1,16 @@
 import { groupBy, keyBy } from 'lodash'
-import fs from 'fs'
+
+const locales = [
+  'zh-tw',
+  'en'
+]
 
 /**
- * Check locale directory exists.
+ * Check whether locale is supported.
  * @param {string} path
  */
-let checkDirExists = (locale) => {
-  let isDirSync = (path) => {
-    try {
-      return fs.statSync(path).isDirectory()
-    } catch (e) {
-      if (e.code === 'ENOENT') {
-        return false
-      } else {
-        throw e
-      }
-    }
-  }
-
-  if (!isDirSync(`./src/${locale}`)) {
+let checkSupportLocale = (locale) => {
+  if (locales.indexOf(locale) < 0) {
     throw new Error(`Locale ${locale} is not support. Help localization? See https://github.com/yyc1217/twzipcode-data#i18n`)
   }
 }
@@ -28,7 +20,7 @@ let checkDirExists = (locale) => {
  * @param {string} locale
  */
 let of = (locale) => {
-  checkDirExists(locale)
+  checkSupportLocale(locale)
 
   const counties = require(`./${locale}/counties`)
   const zipcodes = require(`./${locale}/zipcodes`)
@@ -61,5 +53,6 @@ let data = ({ counties, zipcodes, groupByCounty, keyByZipcode }) => {
 }
 
 export default (locale) => {
+  locale = locale.toLowerCase() || undefined
   return data(of(locale))
 }

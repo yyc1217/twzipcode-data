@@ -1,6 +1,6 @@
 {
   "name": "twzipcode-data",
-  "version": "v1.2.0",
+  "version": "v1.2.2",
   "description": "開發用中華郵政郵遞區號 / Variety format of Taiwan zipcode for developers.",
   "main": "src/index.js",
   "scripts": {

@@ -11,3 +11,10 @@ test({
   TEST_CITY,
   TEST_ZIPCODE
 })
+
+test({
+  locale: locale.toUpperCase(),
+  TEST_COUNTY,
+  TEST_CITY,
+  TEST_ZIPCODE
+})

@@ -11,3 +11,10 @@ test({
   TEST_CITY,
   TEST_ZIPCODE
 })
+
+test({
+  locale: 'zh-TW',
+  TEST_COUNTY,
+  TEST_CITY,
+  TEST_ZIPCODE
+})
