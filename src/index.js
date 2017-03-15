@@ -52,7 +52,9 @@ let data = ({ counties, zipcodes, groupByCounty, keyByZipcode }) => {
   }
 }
 
-export default (locale) => {
-  locale = locale.toLowerCase() || undefined
+export default (locale = 'zh-tw') => {
+  locale = locale || ''
+  locale = locale.toLowerCase()
+
   return data(of(locale))
 }
