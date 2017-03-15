@@ -5,12 +5,6 @@ import fs from 'fs'
  * Check locale directory exists.
  * @param {string} path
  */
-
-
-/**
- *
- * @param {string} locale
- */
 let checkDirExists = (locale) => {
   let isDirSync = (path) => {
     try {
@@ -66,6 +60,6 @@ let data = ({ counties, zipcodes, groupByCounty, keyByZipcode }) => {
   }
 }
 
-module.exports = (locale) => {
+export default (locale) => {
   return data(of(locale))
 }
