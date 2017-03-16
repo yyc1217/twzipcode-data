@@ -1,9 +1,5 @@
 import { groupBy, keyBy } from 'lodash'
-
-const locales = [
-  'zh-tw',
-  'en'
-]
+import locales from './locales'
 
 /**
  * Check whether locale is supported.
