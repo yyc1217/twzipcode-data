@@ -17,7 +17,31 @@ bower install twzipcode-data
 npm install twzipcode-data --save-dev
 ```
 
-## 資料結構
+## 用法 Usage
+```javascript
+import twzipcode from 'twzipcode-data'
+
+// 英文
+let data_en = twzipcode('en')
+
+// 預設中文
+let data = twzipcode()
+
+// 所有縣市
+let counties = data.counties
+
+// 所有郵遞區號
+let zipcodes = data.counties
+
+// 以縣市分組的郵遞區號
+let zipcodesGroupByCounty = data.computed.groupByCounty
+
+// 以郵遞區號為key的郵遞區號
+let zipcodesKeyByZipcode = data.computed.keyByZipcode
+
+```
+
+## 郵遞區號資料結構 / Zipcode Object
 | 參數    | 說明           |
 |---------|----------------|
 | zipcode | 3碼郵遞區號    |
@@ -27,5 +51,9 @@ npm install twzipcode-data --save-dev
 ## i18n
 1. In `./src/{locale}`, add `counties.js` and `zipcodes.js`.
 2. In `./test`, add `integrity.test.{locale}.js`.
-3. In `.src/index.js`, append `{locale}` to `locales` parameters.
-see [src/zh-tw](src/zh-tw).
+3. In `.src/locales.js`, append `{locale}` to export array.
+
+See [src/zh-tw](src/zh-tw).
+
+## vue-twzipcode
+中華郵政郵遞區號應用套件：[vue-twzipcode](https://github.com/yyc1217/vue-twzipcode)
