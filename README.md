@@ -31,9 +31,9 @@ let data = twzipcode()
 let counties = data.counties
 
 // 所有郵遞區號
-let zipcodes = data.counties
+let zipcodes = data.zipcodes
 
-// 以縣市分組的郵遞區號
+// 以縣市名稱分組的郵遞區號
 let zipcodesGroupByCounty = data.computed.groupByCounty
 
 // 以郵遞區號為key的郵遞區號
@@ -41,12 +41,20 @@ let zipcodesKeyByZipcode = data.computed.keyByZipcode
 
 ```
 
-## 郵遞區號資料結構 / Zipcode Object
+## 資料結構 / Data Structure
+
+### 縣市 / County Object
 | 參數    | 說明           |
-|---------|----------------|
-| zipcode | 3碼郵遞區號    |
-| county  | 縣、市或直轄市 |
-| city    | 鄉鎮市區       |
+|---------|---------------|
+| id      | 中文名稱       |
+| name    | 縣市名稱       |
+
+### 郵遞區號 / Zipcode Object
+| 參數    | 說明           |
+|---------|---------------|
+| id      | 3碼郵遞區號    |
+| county  | 縣、市或直轄市中文名稱 |
+| city    | 鄉鎮市區中文名稱 |
 
 ## i18n
 1. In `./src/{locale}`, add `counties.js` and `zipcodes.js`.

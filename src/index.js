@@ -28,7 +28,7 @@ let of = (locale) => {
       return groupBy(zipcodes, 'county')
     },
     get keyByZipcode () {
-      return keyBy(zipcodes, 'zipcode')
+      return keyBy(zipcodes, 'id')
     }
   }
 }
