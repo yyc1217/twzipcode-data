@@ -13,7 +13,7 @@ export default ({
 
   describe(`Integrity of ${locale}`, () => {
     it(`should contain ${COUNTIES_COUNT} counties`, () => data.counties.should.have.length(COUNTIES_COUNT))
-    it(`should contain ${TEST_COUNTY.name}`, () => data.counties.should.containEql(TEST_COUNTY.name))
+    it(`should contain ${JSON.stringify(TEST_COUNTY)}`, () => data.counties.should.containEql(TEST_COUNTY))
 
     it(`should contain ${ZIPCODES_COUNT} zipcodes`, () => data.zipcodes.should.have.length(ZIPCODES_COUNT))
     it(`should contain ${JSON.stringify(TEST_ZIPCODE)}`, () => data.zipcodes.should.containDeepOrdered([TEST_ZIPCODE]))

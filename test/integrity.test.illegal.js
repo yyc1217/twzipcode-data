@@ -14,6 +14,10 @@ describe('Test illegal locale', () => {
     })
   })
 
-  let county = '臺北市'
+  let county = {
+    id: '臺北市',
+    name: '臺北市'
+  }
+
   it('should defaults to zh-tw with locale undefined', () => twzipcode().counties.should.containEql(county))
 })
