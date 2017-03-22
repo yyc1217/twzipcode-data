@@ -1,5 +1,5 @@
 import should from 'should'
-import twzipcode from '../src'
+import twzipcode from '../dist'
 
 describe('Test illegal locale', () => {
   let illegal = [

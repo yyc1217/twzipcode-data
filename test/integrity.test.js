@@ -1,5 +1,5 @@
 import 'should'
-import twzipcode from '../src'
+import twzipcode from '../dist'
 
 const COUNTIES_COUNT = 22
 const ZIPCODES_COUNT = 368

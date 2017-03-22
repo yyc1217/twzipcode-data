@@ -1,11 +1,11 @@
 {
   "name": "twzipcode-data",
-  "version": "v1.3.0",
+  "version": "v1.3.2",
   "description": "開發用中華郵政郵遞區號 / Variety format of Taiwan zipcode for developers.",
-  "main": "src/index.js",
+  "main": "dist/index.js",
   "scripts": {
     "test": "mocha --compilers js:babel-core/register",
-    "dev": "babel src -d dist"
+    "build": "babel src -d dist"
   },
   "repository": {
     "type": "git",
