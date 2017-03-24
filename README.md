@@ -77,4 +77,4 @@ npm run build
 See [src/zh-tw](src/zh-tw).
 
 ## vue-twzipcode
-中華郵政郵遞區號 Vuejs components：[vue-twzipcode](https://github.com/yyc1217/vue-twzipcode)
+中華郵政郵遞區號 Vuejs components：[twzipcode-vue](https://github.com/yyc1217/twzipcode-vue)
