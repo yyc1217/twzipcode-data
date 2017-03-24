@@ -1,6 +1,6 @@
 {
   "name": "twzipcode-data",
-  "main": "src/index.js",
+  "main": "dist/index.js",
   "homepage": "https://github.com/yyc1217/twzipcode-data",
   "authors": [
     "Yeh-Yung <yyc1217@gmail.com>"

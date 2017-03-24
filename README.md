@@ -56,6 +56,19 @@ let zipcodesKeyByZipcode = data.computed.keyByZipcode
 | county  | 縣、市或直轄市中文名稱 |
 | city    | 鄉鎮市區中文名稱 |
 
+## Build Setup
+
+``` bash
+# install dependencies
+npm install
+
+# run tests
+npm run test
+
+# build for production with minification
+npm run build
+```
+
 ## i18n
 1. In `./src/{locale}`, add `counties.js` and `zipcodes.js`.
 2. In `./test`, add `integrity.test.{locale}.js`.
@@ -64,4 +77,4 @@ let zipcodesKeyByZipcode = data.computed.keyByZipcode
 See [src/zh-tw](src/zh-tw).
 
 ## vue-twzipcode
-中華郵政郵遞區號應用套件：[vue-twzipcode](https://github.com/yyc1217/vue-twzipcode)
+中華郵政郵遞區號 Vuejs components：[vue-twzipcode](https://github.com/yyc1217/vue-twzipcode)
