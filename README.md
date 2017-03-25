@@ -5,6 +5,7 @@
 2. 英文譯名來自於[地名資訊服務網](gn.moi.gov.tw)的**「臺灣地區鄉鎮市區級以上行政區域名稱中英對照表.pdf」**。
 
 [![Travis](https://img.shields.io/travis/yyc1217/twzipcode-data.svg)]()
+[![Coverage Status](https://coveralls.io/repos/github/yyc1217/twzipcode-data/badge.svg?branch=master)](https://coveralls.io/github/yyc1217/twzipcode-data?branch=master)
 [![Github All Releases](https://img.shields.io/github/downloads/yyc1217/twzipcode-data/total.svg)]()
 [![npm](https://img.shields.io/npm/dt/twzipcode-data.svg)]()
 [![npm](https://img.shields.io/npm/v/twzipcode-data.svg)]()
