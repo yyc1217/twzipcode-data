@@ -1,4 +1,3 @@
-import { groupBy, keyBy } from 'lodash'
 import locales from './locales'
 
 /**
@@ -23,13 +22,7 @@ let of = (locale) => {
 
   return {
     counties,
-    zipcodes,
-    get groupByCounty () {
-      return groupBy(zipcodes, 'county')
-    },
-    get keyById () {
-      return keyBy(zipcodes, 'id')
-    }
+    zipcodes
   }
 }
 
@@ -40,13 +33,7 @@ let of = (locale) => {
 let data = ({ counties, zipcodes, groupByCounty, keyById }) => {
   return {
     counties,
-    zipcodes,
-    computed: {
-      zipcodes: {
-        groupByCounty,
-        keyById
-      }
-    }
+    zipcodes
   }
 }
 

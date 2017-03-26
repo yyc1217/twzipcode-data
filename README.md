@@ -41,12 +41,6 @@ let counties = data.counties
 // 所有郵遞區號
 let zipcodes = data.zipcodes
 
-// 以縣市名稱分組的郵遞區號
-let zipcodesGroupByCounty = data.computed.zipcodes.groupByCounty
-
-// 以郵遞區號為key的郵遞區號
-let zipcodesKeyById = data.computed.zipcodes.keyById
-
 ```
 
 ## 資料結構 / Data Structure
