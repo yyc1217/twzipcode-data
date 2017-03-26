@@ -18,15 +18,15 @@ export default ({
     it(`should contain ${ZIPCODES_COUNT} zipcodes`, () => data.zipcodes.should.have.length(ZIPCODES_COUNT))
     it(`should contain ${JSON.stringify(TEST_ZIPCODE)}`, () => data.zipcodes.should.containDeepOrdered([TEST_ZIPCODE]))
 
-    it(`should contain ${COUNTIES_COUNT} county groups`, () => data.computed.groupByCounty.should.have.size(COUNTIES_COUNT))
-    it(`should contain ${JSON.stringify(TEST_ZIPCODE)} group by ${TEST_COUNTY.name}`, () => data.computed.groupByCounty.should.containDeepOrdered({
+    it(`should contain ${COUNTIES_COUNT} county groups`, () => data.computed.zipcodes.groupByCounty.should.have.size(COUNTIES_COUNT))
+    it(`should contain ${JSON.stringify(TEST_ZIPCODE)} group by ${TEST_COUNTY.name}`, () => data.computed.zipcodes.groupByCounty.should.containDeepOrdered({
       [TEST_COUNTY.name]: [
         TEST_ZIPCODE
       ]
     }))
 
-    it(`should contain ${ZIPCODES_COUNT} zipcodes key by its id`, () => data.computed.keyByZipcode.should.have.size(ZIPCODES_COUNT))
-    it(`should contain ${JSON.stringify(TEST_ZIPCODE)} key by zipcode ${TEST_ZIPCODE.id}`, () => data.computed.keyByZipcode.should.containDeepOrdered({
+    it(`should contain ${ZIPCODES_COUNT} zipcodes key by its id`, () => data.computed.zipcodes.keyById.should.have.size(ZIPCODES_COUNT))
+    it(`should contain ${JSON.stringify(TEST_ZIPCODE)} key by zipcode ${TEST_ZIPCODE.id}`, () => data.computed.zipcodes.keyById.should.containDeepOrdered({
       [TEST_ZIPCODE.id]: TEST_ZIPCODE
     }))
   })

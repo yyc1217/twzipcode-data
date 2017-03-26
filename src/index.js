@@ -27,7 +27,7 @@ let of = (locale) => {
     get groupByCounty () {
       return groupBy(zipcodes, 'county')
     },
-    get keyByZipcode () {
+    get keyById () {
       return keyBy(zipcodes, 'id')
     }
   }
@@ -37,13 +37,15 @@ let of = (locale) => {
  * Construct response format.
  * @param {Object} options
  */
-let data = ({ counties, zipcodes, groupByCounty, keyByZipcode }) => {
+let data = ({ counties, zipcodes, groupByCounty, keyById }) => {
   return {
     counties,
     zipcodes,
     computed: {
-      groupByCounty,
-      keyByZipcode
+      zipcodes: {
+        groupByCounty,
+        keyById
+      }
     }
   }
 }
