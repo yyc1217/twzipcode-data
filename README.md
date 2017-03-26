@@ -78,9 +78,10 @@ npm run build
 ```
 
 ## i18n
-1. In `./src/{locale}`, add `counties.js` and `zipcodes.js`.
-2. In `./test`, add `integrity.test.{locale}.js`.
-3. In `.src/locales.js`, append `{locale}` to export array.
+1. Create a directory in `./src/{locale}`.
+2. In `./src/{locale}`, add `counties.js` and `zipcodes.js`.
+3. In `./test`, add `integrity.test.{locale}.js`.
+4. In `.src/locales.js`, append `{locale}` to export array.
 
 See [src/zh-tw](src/zh-tw).
 
