@@ -1,22 +1,13 @@
 import locales from './locales'
+import acceptLanguage from 'accept-language'
 
-/**
- * Check whether locale is supported.
- * @param {string} path
- */
-let checkSupportLocale = (locale) => {
-  if (locales.indexOf(locale) < 0) {
-    throw new Error(`Locale ${locale} is not support. Help localization? See https://github.com/yyc1217/twzipcode-data#i18n`)
-  }
-}
+acceptLanguage.languages(locales)
 
 /**
  * Read data.
  * @param {string} locale
  */
 let of = (locale) => {
-  checkSupportLocale(locale)
-
   const counties = require(`./${locale}/counties`)
   const zipcodes = require(`./${locale}/zipcodes`)
 
@@ -37,9 +28,7 @@ let data = ({ counties, zipcodes, groupByCounty, keyById }) => {
   }
 }
 
-export default (locale = 'zh-tw') => {
-  locale = locale || ''
-  locale = locale.toLowerCase()
-
+export default (locale = '*') => {
+  locale = acceptLanguage.get(locale)
   return data(of(locale))
 }

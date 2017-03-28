@@ -1,4 +1,4 @@
 export default [
-  'zh-tw',
-  'en'
+  'zh-TW',
+  'en-US'
 ]

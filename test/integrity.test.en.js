@@ -1,6 +1,5 @@
 import test from './integrity.test'
 
-const locale = 'en'
 const TEST_COUNTY = {
   id: '臺北市',
   name: 'Taipei City'
@@ -13,13 +12,13 @@ const TEST_ZIPCODE = {
 }
 
 test({
-  locale,
+  locale: 'en',
   TEST_COUNTY,
   TEST_ZIPCODE
 })
 
 test({
-  locale: locale.toUpperCase(),
+  locale: 'en-US',
   TEST_COUNTY,
   TEST_ZIPCODE
 })
