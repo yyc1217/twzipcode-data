@@ -8,6 +8,7 @@ acceptLanguage.languages(locales)
  * @param {string} locale
  */
 let of = (locale) => {
+  locale = locale.toLowerCase()
   const counties = require(`./${locale}/counties`)
   const zipcodes = require(`./${locale}/zipcodes`)
 

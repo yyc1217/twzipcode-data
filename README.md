@@ -79,5 +79,7 @@ npm run build
 
 See [src/zh-tw](src/zh-tw).
 
+> Directory name should be lowercase(zh-tw), locale name in files should be uppercase for extra information(zh-TW).
+
 ## vue-twzipcode
 中華郵政郵遞區號 Vuejs components：[twzipcode-vue](https://github.com/yyc1217/twzipcode-vue)
