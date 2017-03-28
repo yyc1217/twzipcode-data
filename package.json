@@ -37,9 +37,7 @@
     "should": "^11.2.1",
     "standard": "^9.0.1"
   },
-  "dependencies": {
-    "lodash": "^4.17.4"
-  },
+  "dependencies": {},
   "standard": {
     "globals": [
       "describe",
