@@ -1,90 +1,90 @@
 module.exports = [
   {
-    id: '\u81fa\u5317\u5e02',
+    id: '臺北市',
     name: 'Taipei City'
   },
   {
-    id: '\u57fa\u9686\u5e02',
+    id: '基隆市',
     name: 'Keelung City'
   },
   {
-    id: '\u65b0\u5317\u5e02',
+    id: '新北市',
     name: 'New Taipei City'
   },
   {
-    id: '\u5b9c\u862d\u7e23',
+    id: '宜蘭縣',
     name: 'Yilan County'
   },
   {
-    id: '\u65b0\u7af9\u5e02',
+    id: '新竹市',
     name: 'Hsinchu City'
   },
   {
-    id: '\u65b0\u7af9\u7e23',
+    id: '新竹縣',
     name: 'HsinChu County'
   },
   {
-    id: '\u6843\u5712\u5e02',
+    id: '桃園市',
     name: 'Taoyuan City'
   },
   {
-    id: '\u82d7\u6817\u7e23',
+    id: '苗栗縣',
     name: 'Miaoli County'
   },
   {
-    id: '\u81fa\u4e2d\u5e02',
+    id: '臺中市',
     name: 'Taichung City'
   },
   {
-    id: '\u5f70\u5316\u7e23',
+    id: '彰化縣',
     name: 'Changhua County'
   },
   {
-    id: '\u5357\u6295\u7e23',
+    id: '南投縣',
     name: 'Nantou County'
   },
   {
-    id: '\u5609\u7fa9\u5e02',
+    id: '嘉義市',
     name: 'Chiayi City'
   },
   {
-    id: '\u5609\u7fa9\u7e23',
+    id: '嘉義縣',
     name: 'Chiayi County'
   },
   {
-    id: '\u96f2\u6797\u7e23',
+    id: '雲林縣',
     name: 'Yunlin County'
   },
   {
-    id: '\u81fa\u5357\u5e02',
+    id: '臺南市',
     name: 'Tainan City'
   },
   {
-    id: '\u9ad8\u96c4\u5e02',
+    id: '高雄市',
     name: 'Kaohsiung City'
   },
   {
-    id: '\u6f8e\u6e56\u7e23',
+    id: '澎湖縣',
     name: 'Penghu County'
   },
   {
-    id: '\u5c4f\u6771\u7e23',
+    id: '屏東縣',
     name: 'Pingtung County'
   },
   {
-    id: '\u81fa\u6771\u7e23',
+    id: '臺東縣',
     name: 'Taitung County'
   },
   {
-    id: '\u82b1\u84ee\u7e23',
+    id: '花蓮縣',
     name: 'Hualien County'
   },
   {
-    id: '\u91d1\u9580\u7e23',
+    id: '金門縣',
     name: 'Kinmen County'
   },
   {
-    id: '\u9023\u6c5f\u7e23',
+    id: '連江縣',
     name: 'Lienchiang County'
   }
 ]
