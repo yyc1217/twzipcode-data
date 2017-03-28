@@ -35,6 +35,9 @@ let data_en = twzipcode('en')
 // 預設中文
 let data = twzipcode()
 
+// 或是傳入Accept-Language
+let data_guess = twzipcode('zh-TW,zh;q=0.8,en-US;q=0.5,en;q=0.3')
+
 // 所有縣市
 let counties = data.counties
 
