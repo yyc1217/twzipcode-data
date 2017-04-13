@@ -4,14 +4,14 @@
 1. 將[中華郵政](www.post.gov.tw)的 **「臺灣地區郵遞區號前3碼一覽表 103/12(Excel版)」** 轉成js，方便開發時可直接引用。
 2. 英文譯名來自於[地名資訊服務網](gn.moi.gov.tw)的 **「臺灣地區鄉鎮市區級以上行政區域名稱中英對照表.pdf」** 。
 
-[![Travis](https://img.shields.io/travis/yyc1217/twzipcode-data.svg)]()
-[![Coverage Status](https://coveralls.io/repos/github/yyc1217/twzipcode-data/badge.svg?branch=master)](https://coveralls.io/github/yyc1217/twzipcode-data?branch=master)
-[![Github All Releases](https://img.shields.io/github/downloads/yyc1217/twzipcode-data/total.svg)]()
-[![npm](https://img.shields.io/npm/dt/twzipcode-data.svg)]()
-[![npm](https://img.shields.io/npm/v/twzipcode-data.svg)]()
-[![GitHub release](https://img.shields.io/github/release/yyc1217/twzipcode-data.svg)]()
-[![npm](https://img.shields.io/npm/l/twzipcode-data.svg)]()
-[![GitHub stars](https://img.shields.io/github/stars/yyc1217/twzipcode-data.svg?style=social&label=Star)]()
+[![Travis](https://img.shields.io/travis/yyc1217/twzipcode-data.svg)](https://travis-ci.org/yyc1217/twzipcode-data)
+[![Coverage Status](https://coveralls.io/repos/github/yyc1217/twzipcode-data/badge.svg?branch=master)](https://coveralls.io/r/yyc1217/twzipcode-data)
+[![Github All Releases](https://img.shields.io/github/downloads/yyc1217/twzipcode-data/total.svg)](https://github.com/yyc1217/twzipcode-data/releases)
+[![npm](https://img.shields.io/npm/dt/twzipcode-data.svg)](https://www.npmjs.com/package/twzipcode-data)
+[![npm](https://img.shields.io/npm/v/twzipcode-data.svg)](https://www.npmjs.com/package/twzipcode-data)
+[![GitHub release](https://img.shields.io/github/release/yyc1217/twzipcode-data.svg)](https://github.com/yyc1217/twzipcode-data/releases)
+[![npm](https://img.shields.io/npm/l/twzipcode-data.svg)](https://github.com/yyc1217/twzipcode-data)
+[![GitHub stars](https://img.shields.io/github/stars/yyc1217/twzipcode-data.svg?style=social&label=Star)](https://github.com/yyc1217/twzipcode-data)
 
 ## Install
 
