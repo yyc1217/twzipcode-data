@@ -6,6 +6,7 @@
   "scripts": {
     "test": "mocha --compilers js:babel-core/register",
     "build": "babel src -d dist",
+    "generate": "node ./parser/parser.js",
     "cover": "nyc mocha --compilers js:babel-core/register",
     "coveralls": "nyc report --reporter=text-lcov | coveralls"
   },
@@ -31,10 +32,13 @@
     "babel-preset-es2015": "^6.24.0",
     "coveralls": "^2.12.0",
     "istanbul": "^0.4.5",
+    "lodash": "^4.17.4",
     "mocha": "^3.2.0",
+    "moment": "^2.18.1",
     "nyc": "^10.1.2",
     "should": "^11.2.1",
-    "standard": "^9.0.1"
+    "standard": "^9.0.1",
+    "xml2json-light": "^1.0.4"
   },
   "dependencies": {
     "accept-language": "^3.0.15"
