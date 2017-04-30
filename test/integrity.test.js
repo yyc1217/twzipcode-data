@@ -2,7 +2,7 @@ import 'should'
 import twzipcode from '../dist'
 
 const COUNTIES_COUNT = 22
-const ZIPCODES_COUNT = 368
+const ZIPCODES_COUNT = 371
 
 export default ({
     locale,
