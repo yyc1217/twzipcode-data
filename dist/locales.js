@@ -3,4 +3,4 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = ['zh-TW', 'en-US'];
+exports.default = ['zh-TW', 'en'];
