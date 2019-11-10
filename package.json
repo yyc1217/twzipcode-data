@@ -4,9 +4,9 @@
   "description": "開發用中華郵政郵遞區號 / Variety format of Taiwan zipcode for developers.",
   "main": "dist/index.js",
   "scripts": {
-    "test": "mocha --compilers js:babel-core/register",
+    "test": "mocha --require @babel/register",
     "build": "babel src -d dist",
-    "cover": "nyc mocha --compilers js:babel-core/register",
+    "cover": "nyc mocha --require @babel/register",
     "coveralls": "nyc report --reporter=text-lcov | coveralls"
   },
   "repository": {
@@ -27,17 +27,18 @@
   },
   "homepage": "https://github.com/yyc1217/twzipcode-data#readme",
   "devDependencies": {
-    "babel-cli": "^6.24.1",
-    "babel-preset-es2015": "^6.24.1",
-    "coveralls": "^2.13.1",
+    "@babel/core": "^7.7.2",
+    "@babel/preset-env": "^7.7.1",
+    "@babel/register": "^7.7.0",
+    "coveralls": "^3.0.7",
     "istanbul": "^0.4.5",
-    "mocha": "^3.4.2",
-    "nyc": "^10.3.2",
+    "mocha": "^6.2.2",
+    "nyc": "^14.1.1",
     "should": "^11.2.1",
     "standard": "^9.0.1"
   },
   "dependencies": {
-    "accept-language": "^3.0.17"
+    "accept-language": "^3.0.18"
   },
   "standard": {
     "globals": [
