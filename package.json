@@ -42,6 +42,9 @@
     "accept-language": "^3.0.18"
   },
   "standard": {
+    "ignore": [
+      "dist"
+    ],
     "globals": [
       "describe",
       "it"
