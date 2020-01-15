@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 module.exports = [{
   id: '臺北市',
