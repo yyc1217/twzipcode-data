@@ -1,56 +1,55 @@
-"use strict";
+'use strict';
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports["default"] = void 0;
 
-var _locales = _interopRequireDefault(require("./locales"));
+var _locales = require('./locales');
 
-var _acceptLanguage = _interopRequireDefault(require("accept-language"));
+var _locales2 = _interopRequireDefault(_locales);
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+var _acceptLanguage = require('accept-language');
 
-_acceptLanguage["default"].languages(_locales["default"]);
+var _acceptLanguage2 = _interopRequireDefault(_acceptLanguage);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+_acceptLanguage2.default.languages(_locales2.default);
+
 /**
  * Read data.
  * @param {string} locale
  */
-
-
 var of = function of(locale) {
   locale = locale.toLowerCase();
-
-  var counties = require("./".concat(locale, "/counties"));
-
-  var zipcodes = require("./".concat(locale, "/zipcodes"));
+  var counties = require('./' + locale + '/counties');
+  var zipcodes = require('./' + locale + '/zipcodes');
 
   return {
     counties: counties,
     zipcodes: zipcodes
   };
 };
+
 /**
  * Construct response format.
  * @param {Object} options
  */
-
-
 var data = function data(_ref) {
   var counties = _ref.counties,
       zipcodes = _ref.zipcodes,
       groupByCounty = _ref.groupByCounty,
       keyById = _ref.keyById;
+
   return {
     counties: counties,
     zipcodes: zipcodes
   };
 };
 
-var _default = function _default() {
+exports.default = function () {
   var locale = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : '*';
-  locale = _acceptLanguage["default"].get(locale);
+
+  locale = _acceptLanguage2.default.get(locale);
   return data(of(locale));
 };
-
-exports["default"] = _default;
