@@ -435,23 +435,23 @@ module.exports = [{
 }, {
   'id': 400,
   'county': '臺中市',
-  'city': '中　區'
+  'city': '中區'
 }, {
   'id': 401,
   'county': '臺中市',
-  'city': '東　區'
+  'city': '東區'
 }, {
   'id': 402,
   'county': '臺中市',
-  'city': '南　區'
+  'city': '南區'
 }, {
   'id': 403,
   'county': '臺中市',
-  'city': '西　區'
+  'city': '西區'
 }, {
   'id': 404,
   'county': '臺中市',
-  'city': '北　區'
+  'city': '北區'
 }, {
   'id': 406,
   'county': '臺中市',
@@ -871,15 +871,15 @@ module.exports = [{
 }, {
   'id': 701,
   'county': '臺南市',
-  'city': '東　區'
+  'city': '東區'
 }, {
   'id': 702,
   'county': '臺南市',
-  'city': '南　區'
+  'city': '南區'
 }, {
   'id': 704,
   'county': '臺南市',
-  'city': '北　區'
+  'city': '北區'
 }, {
   'id': 708,
   'county': '臺南市',
