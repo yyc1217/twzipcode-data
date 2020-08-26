@@ -35,7 +35,7 @@
     "istanbul": "^0.4.5",
     "mocha": "^6.2.2",
     "nyc": "^15.1.0",
-    "should": "^11.2.1",
+    "should": "^13.2.3",
     "standard": "^14.3.4"
   },
   "dependencies": {
