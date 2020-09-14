@@ -1,0 +1,33 @@
+name: Test
+
+on: [push]
+
+jobs:
+
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [10.x, 12.x]
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      - run: yarn install
+      - run: yarn run test
+  
+  # publish:
+  #  needs: test
+  #  runs-on: ubuntu-latest
+  #  if: startsWith(github.ref, 'refs/tags/')
+  #  steps:
+  #    - uses: actions/checkout@master
+  #    - uses: actions/setup-node@v1
+  #      with:
+  #        node-version: 12
+  #        registry-url: https://registry.npmjs.org/
+  #    - run: yarn
+  #    - run: yarn publish
+  #      env:
+  #        NODE_AUTH_TOKEN: ${{ secrets.npm_token }}
