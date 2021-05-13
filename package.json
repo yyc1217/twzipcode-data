@@ -33,10 +33,10 @@
     "@babel/register": "^7.7.0",
     "coveralls": "^3.0.7",
     "istanbul": "^0.4.5",
-    "mocha": "^6.2.2",
-    "nyc": "^14.1.1",
-    "should": "^11.2.1",
-    "standard": "^9.0.1"
+    "mocha": "^8.1.2",
+    "nyc": "^15.1.0",
+    "should": "^13.2.3",
+    "standard": "^16.0.1"
   },
   "dependencies": {
     "accept-language": "^3.0.18"
