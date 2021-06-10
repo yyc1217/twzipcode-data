@@ -6,7 +6,8 @@ const TEST_COUNTY = {
 }
 
 const TEST_ZIPCODE = {
-  id: 100,
+  id: '100臺北市中正區',
+  zipcode: 100,
   county: 'Taipei City',
   city: 'Zhongzheng District'
 }

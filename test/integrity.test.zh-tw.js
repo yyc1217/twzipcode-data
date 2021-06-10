@@ -6,7 +6,8 @@ const TEST_COUNTY = {
 }
 
 const TEST_ZIPCODE = {
-  id: 100,
+  id: '100臺北市中正區',
+  zipcode: 100,
   county: '臺北市',
   city: '中正區'
 }
