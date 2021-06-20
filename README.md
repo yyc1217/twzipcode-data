@@ -9,6 +9,8 @@
 [![npm](https://img.shields.io/npm/dt/twzipcode-data.svg)](https://www.npmjs.com/package/twzipcode-data)
 [![npm](https://img.shields.io/npm/v/twzipcode-data.svg)](https://www.npmjs.com/package/twzipcode-data)
 [![npm](https://img.shields.io/npm/l/twzipcode-data.svg)](https://github.com/yyc1217/twzipcode-data)
+[![dependencies](https://david-dm.org/yyc1217/twzipcode-data.svg)](https://david-dm.org/yyc1217/twzipcode-data)
+[![devDependency](https://david-dm.org/yyc1217/twzipcode-data/dev-status.svg)](https://david-dm.org/yyc1217/twzipcode-data#info=devDependencies)
 [![GitHub stars](https://img.shields.io/github/stars/yyc1217/twzipcode-data.svg?style=social&label=Star)](https://github.com/yyc1217/twzipcode-data)
 
 ## Install
