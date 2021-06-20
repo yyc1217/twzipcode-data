@@ -6,8 +6,8 @@
   "scripts": {
     "test": "mocha --require @babel/register",
     "build": "babel src -d dist",
-    "cover": "nyc mocha --require @babel/register",
-    "coveralls": "nyc report --reporter=lcov"
+    "cover": "nyc yarn run test",
+    "coveralls": "yarn run cover & nyc report --reporter=lcov"
   },
   "repository": {
     "type": "git",
