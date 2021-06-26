@@ -58,9 +58,11 @@ let zipcodes = data.zipcodes
 | 參數    | 說明           |
 |---------|---------------|
 | id      | 中文名稱    |
-| zipcode | 3碼郵遞區號    |
+| zipcode | 3碼郵遞區號*    |
 | county  | 縣、市或直轄市中文名稱 |
 | city    | 鄉鎮市區中文名稱 |
+
+*有部分重覆（新竹市 200、嘉義市 600）
 
 ## Build Setup
 
