@@ -3,7 +3,6 @@ node_modules/
 nyc
 .nyc_output
 coverage
-dist
 
 .yarn/*
 !.yarn/cache
