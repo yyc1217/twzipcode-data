@@ -1,16 +1,16 @@
 # TwZipcode
 > 開發用中華郵政郵遞區號 / Taiwan zipcodes for developers.
 
-1. 將[中華郵政](www.post.gov.tw)的 **「臺灣地區郵遞區號前3碼一覽表 103/12(Excel版)」** 轉成js，方便開發時可直接引用。
-2. 英文譯名來自於[地名資訊服務網](gn.moi.gov.tw)的 **「臺灣地區鄉鎮市區級以上行政區域名稱中英對照表.pdf」** 。
+1. 將[中華郵政](https://www.post.gov.tw)的 **「臺灣地區郵遞區號前3碼一覽表 103/12(Excel版)」** 轉成js，方便開發時可直接引用。
+2. 英文譯名來自於[地名資訊服務網](http://gn.moi.gov.tw)的 **「臺灣地區鄉鎮市區級以上行政區域名稱中英對照表.pdf」** 。
 
 [![Travis](https://img.shields.io/travis/yyc1217/twzipcode-data.svg)](https://travis-ci.org/yyc1217/twzipcode-data)
 [![Coverage Status](https://coveralls.io/repos/github/yyc1217/twzipcode-data/badge.svg?branch=master)](https://coveralls.io/r/yyc1217/twzipcode-data)
-[![Github All Releases](https://img.shields.io/github/downloads/yyc1217/twzipcode-data/total.svg)](https://github.com/yyc1217/twzipcode-data/releases)
 [![npm](https://img.shields.io/npm/dt/twzipcode-data.svg)](https://www.npmjs.com/package/twzipcode-data)
 [![npm](https://img.shields.io/npm/v/twzipcode-data.svg)](https://www.npmjs.com/package/twzipcode-data)
-[![GitHub release](https://img.shields.io/github/release/yyc1217/twzipcode-data.svg)](https://github.com/yyc1217/twzipcode-data/releases)
 [![npm](https://img.shields.io/npm/l/twzipcode-data.svg)](https://github.com/yyc1217/twzipcode-data)
+[![dependencies](https://david-dm.org/yyc1217/twzipcode-data.svg)](https://david-dm.org/yyc1217/twzipcode-data)
+[![devDependency](https://david-dm.org/yyc1217/twzipcode-data/dev-status.svg)](https://david-dm.org/yyc1217/twzipcode-data#info=devDependencies)
 [![GitHub stars](https://img.shields.io/github/stars/yyc1217/twzipcode-data.svg?style=social&label=Star)](https://github.com/yyc1217/twzipcode-data)
 
 ## Install
@@ -57,9 +57,12 @@ let zipcodes = data.zipcodes
 ### 郵遞區號 / Zipcode Object
 | 參數    | 說明           |
 |---------|---------------|
-| id      | 3碼郵遞區號    |
+| id      | 中文名稱    |
+| zipcode | 3碼郵遞區號*    |
 | county  | 縣、市或直轄市中文名稱 |
 | city    | 鄉鎮市區中文名稱 |
+
+*有部分重覆（新竹市 200、嘉義市 600）
 
 ## Build Setup
 
