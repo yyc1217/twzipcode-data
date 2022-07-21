@@ -39,7 +39,8 @@
     "standard": "^9.0.1"
   },
   "dependencies": {
-    "accept-language": "^3.0.18"
+    "accept-language": "^3.0.18",
+    "yarn": "^1.22.19"
   },
   "standard": {
     "ignore": [
@@ -49,5 +50,6 @@
       "describe",
       "it"
     ]
-  }
+  },
+  "packageManager": "yarn@3.2.1"
 }
